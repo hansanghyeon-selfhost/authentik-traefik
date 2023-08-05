@@ -16,25 +16,25 @@ http:
           - X-authentik-meta-provider
           - X-authentik-meta-app
           - X-authentik-meta-version
-      securityHeaders:
-        headers:
-          customResponseHeaders:
-            X-Robots-Tag: "none,noarchive,nosnippet,notranslate,noimageindex"
-            server: ""
-          sslProxyHeaders:
-            X-Forwarded-Proto: https
-          referrerPolicy: "same-origin"
-          hostsProxyHeaders:
-            - "X-Forwarded-Host"
-          customRequestHeaders:
-            X-Forwarded-Proto: "https"
-          customResponseHeaders:
-            X-Forwarded-Proto: "https"
-          contentTypeNosniff: true
-          browserXssFilter: true
-          forceSTHeader: true
-          stsIncludeSubdomains: true
-          stsSeconds: 63072000
-          stsPreload: true
-      gzip:
-        compress: {}
+      #securityHeaders:
+      #  headers:
+      #    customResponseHeaders:
+      #      X-Robots-Tag: "none,noarchive,nosnippet,notranslate,noimageindex"
+      #      server: ""
+      #    sslProxyHeaders:
+      #      X-Forwarded-Proto: https
+      #    referrerPolicy: "same-origin"
+      #    hostsProxyHeaders:
+      #      - "X-Forwarded-Host"
+      #    customRequestHeaders:
+      #      X-Forwarded-Proto: "https"
+      #    customResponseHeaders:
+      #      X-Forwarded-Proto: "https"
+      #    contentTypeNosniff: true
+      #    browserXssFilter: true
+      #    forceSTHeader: true
+      #    stsIncludeSubdomains: true
+      #    stsSeconds: 63072000
+      #    stsPreload: true
+      #gzip:
+      #  compress: {}
