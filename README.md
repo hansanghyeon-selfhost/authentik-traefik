@@ -7,7 +7,9 @@ authentik란?
 
 왜 이것을 사용하는가? 무수히 selfhost 서비스들이있고 각 서비스마다 모두 auth 기능을 추가할수없습니다. authentik를 통해서 인증을 아주 간편하게 넣을 수 있습니다.
 
-## using
+## install
+
+### 1. traefik config 설정
 
 `traefik-anthentik.yaml` 파일을 traefik rules 파일로 이동한다.
 
@@ -29,6 +31,24 @@ services:
 ```
 
 사용하려는 앱에서 traefik label에서 미들웨어로 추가한다.
+
+### 2. git clone
+
+```sh
+git clone ...
+```
+
+```sh
+cp .env.example .env
+```
+
+```sh
+docker-compose up -d
+```
+
+### 3. 초기설정
+
+설정한 도메인에 접속해서 뒤에 `/if/flow/initial-setup`로 접속하여 초기 관리자 계정을 만든다.
 
 ## 참고
 
